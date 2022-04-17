@@ -4,7 +4,10 @@
     "outDir": "./out-tsc/spec",
     "module": "CommonJs",
     "esModuleInterop": true,
-    "types": [ "jest" ]
+    "types": [
+      "jest",
+      "testing-library__jest-dom"
+    ]
   },
   "files": [ "src/polyfills.ts" ],
   "include": [
