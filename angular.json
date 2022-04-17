@@ -91,13 +91,28 @@
           "options": {
             "configPath": "jest.config.js",
             "tsConfig": "tsconfig.spec.json",
-            "globalMocks": ["getComputedStyle", "doctype"],
+            "globalMocks": [
+              "getComputedStyle",
+              "doctype"
+            ],
             "no-cache": true,
             "reporters": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "angular13-scaffold"
+  "defaultProject": "angular13-scaffold",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
